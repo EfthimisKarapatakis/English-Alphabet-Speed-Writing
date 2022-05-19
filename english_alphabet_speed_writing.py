@@ -35,7 +35,6 @@ def countdown(count):
     
     if count == 0 :
         print('You lose :( ')
-        #exit()
         return
     
     if not won and count > 0:
@@ -49,9 +48,6 @@ countdown(20)
 root.bind('<Key>', on_key_press)
 textlabel = tk.Label(root, text='how fast can you write the alphabet?', bg='red')
 textlabel.pack(side=tk.TOP)
-
-# Κληση συναρτησης μετά απο καθορισμένο χρονικό διάστημα (σε χιλιόστά δευτερολέπτου, ms)
-# root.after(1000, update_timer)
 
 root.mainloop()
 
